@@ -1,0 +1,2 @@
+# outputPropertyAngular
+Created with CodeSandbox
