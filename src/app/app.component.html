@@ -1,0 +1,16 @@
+<h2>disposable pods</h2>
+<table>
+  <tr>
+    <th>brand</th>
+    <th>rating</th>
+  </tr>
+  <tr *ngFor="let pod of pods">
+    <td>{{pod.brand}}</td>
+    <td>
+      <app-rating
+        [rate]="pod.rating"
+        (onRatingChange)="pod.rating = $event"
+      ></app-rating>
+    </td>
+  </tr>
+</table>
